@@ -7,12 +7,14 @@ import { Meteor } from 'meteor/meteor';
 export default class Home extends React.Component {
     showSignup() {
         var element = <Registration/>;
-        ReactDOM.render(element, document.getElementById('signup'))
+        ReactDOM.render(element, document.getElementById('signup'));
+
+
     }
 
     checkLogin() {
         if (Meteor.loggingIn() || Meteor.user()) {
-            return (<Dashboard/>)
+            return (<p>you are log in</p>)
         }
         else {
             return (
@@ -20,8 +22,14 @@ export default class Home extends React.Component {
                     <div>
                         <h4>Picture goes here</h4>
                     </div>
-                    <div id="signup">
-                        <input type="button" value="signup" onClick={this.showSignup.bind(this)}/>
+                    <div>
+                        <div id="button">
+                            <input type="button" value="signup" onClick={this.showSignup.bind(this)}/>
+                        </div>
+
+                        <div id="signup">
+
+                        </div>
                     </div>
                 </div>
             )
