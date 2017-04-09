@@ -50,6 +50,7 @@ Meteor.methods({
   'addPoll': function(text){
       //Allows the user to create a poll
       Poll.insert({ text: text});
+      console.log("The Poll was inserted.");
   },
 
   'addGroup': function(poll){

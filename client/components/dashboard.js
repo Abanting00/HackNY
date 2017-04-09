@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Meteor }           from 'meteor/meteor'
 import { createContainer }  from 'meteor/react-meteor-data';
-
+import { Group}             from '../../server/publications'
+import {Poll}               from '../../server/publications'
 
 class Dashboard extends Component {
     constructor(props){
@@ -19,6 +20,10 @@ class Dashboard extends Component {
             return  "default-user.png";
     }
 
+    getPoll() {
+        Meteor.call('addPoll',"test");
+    }
+
     render() {
         if(!this.props.user) {
             return <div>Loading...</div>;
@@ -33,6 +38,7 @@ class Dashboard extends Component {
                         <div className="action-field">
                             <p>Welcome, {this.getName()}</p>
                         </div>
+                        <input type="button" value="Click Me" onClick={this.getPoll.bind(this)}> </input>
                     </div>
                 </div>
             </div>
@@ -43,6 +49,8 @@ class Dashboard extends Component {
 export default createContainer(() =>{
     //return an object, Whatever we return will be send to userList as props
     Meteor.subscribe('users');
+    Meteor.subscribe('poll');
+    Meteor.subscribe('group');
     var allData=Meteor.users.find({}).fetch();
 
     return { user: Meteor.user(), allData:allData};
