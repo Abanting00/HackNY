@@ -14,7 +14,7 @@ export default class Home extends React.Component {
 
     checkLogin() {
         if (Meteor.loggingIn() || Meteor.user()) {
-            return (<p>you are log in</p>)
+            return (<Dashboard/>)
         }
         else {
             return (
