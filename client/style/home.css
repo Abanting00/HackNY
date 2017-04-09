@@ -1,0 +1,41 @@
+#home-image {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+#main-image {
+    position: absolute;
+}
+
+#button {
+    z-index: 1;
+    position: absolute;
+    opacity: 0.5;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    margin-top: 200px;
+    width: 100%;
+    font-size: 30px;
+}
+
+input[type=button] {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 250px;
+    height: 100px;
+    border: none;
+    color: white;
+}
+
+#register {
+    z-index: 1;
+    position: absolute;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    margin-top: 200px;
+    width: 100%;
+    font-size: 30px;
+}

@@ -28,38 +28,31 @@ class Header extends Component {
         }
     }
 
+    closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
     render() {
         return (
             <div className="navbar navbar-default" role="navigation">
-                <div className="navbar-header">
-                    <Link to="/home" ><img id="logo" src="/" /></Link>
+                <div id="mySidenav" className="sidenav">
+                    <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav.bind(this)}>&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">FAQ</a>
                 </div>
-                <ul className="nav navbar-nav">
-                    <li id="searchBox">
-                        <SearchResults/>
-                    </li>
-                    <li>
-                        <Link to="/home" >HOME</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">ABOUT US</Link>
-                    </li>
-                    <li className="dropdown">
-                        {this.checkSignup()}
-                    </li>
-                    <li>
-                        {this.setLoginLogout()}
-                    </li>
-                </ul>
+                <span id="makeLarger" onClick={this.openNav.bind(this)}>&#9776; </span>
             </div>
         ); //end return()
     } // end render()
 } // end class Header
 
 export default createContainer(() => {
-    /* subscribe to users collection to see them on CTRL + M */
     Meteor.subscribe('users');
-
-    //return an object, Whatever we return will be send to userList as props
     return { user: Meteor.user() };
 }, Header);
