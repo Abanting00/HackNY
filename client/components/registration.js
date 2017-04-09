@@ -66,7 +66,13 @@ export default class Registration extends React.Component {
             this.setState({ passwordError: '' });
 
             var user = { username:username, email: email, password: password,
-                profile: { avatar: '', firstName: firstName, lastName: lastName }};
+                profile: {
+                    avatar: '', firstName: firstName, lastName: lastName,
+                    groups: [],
+                    poll: []
+                }
+
+            };
 
             Accounts.createUser(user, (error) => {
               if (error) {

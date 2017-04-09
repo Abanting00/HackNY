@@ -1,10 +1,8 @@
 import { Meteor }       from 'meteor/meteor';
 import { Accounts }     from 'meteor/accounts-base';
 import { check, Match } from 'meteor/check';
-import { Mongo }        from 'meteor/mongo';
-
-export const Group = new Mongo.Collection('group')
-export const Poll = new Mongo.Collection('poll')
+import {Poll} from '../server/collections';
+import {Group} from '../server/collections';
 
 
 /* Publish users collection to see them on CTRL + M */
@@ -12,12 +10,12 @@ Meteor.publish('users', function() {
     return Meteor.users.find({});
 });
 
-Meteor.publish("poll", function(){
+Meteor.publish('poll', function(){
     return Poll.find({});
 });
 
-Meteor.publish("group", function(){
-    return 'group'.find({});
+Meteor.publish('group', function(){
+    return Group.find({});
 });
 
 Meteor.methods({
@@ -47,11 +45,12 @@ Meteor.methods({
     return user;
   },
 
-  'addPoll': function(text){
-      //Allows the user to create a poll
-      Poll.insert({ text: text});
-      console.log("The Poll was inserted.");
-  },
+    'poll.insert': function() {
+        return Poll.insert({
+            createdAt: new Date(),
+
+        });
+    },
 
   'addGroup': function(poll){
       Group.insert({poll: poll});

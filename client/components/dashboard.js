@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Meteor }           from 'meteor/meteor'
 import { createContainer }  from 'meteor/react-meteor-data';
-import { Group}             from '../../server/publications'
-import {Poll}               from '../../server/publications'
 
 class Dashboard extends Component {
     constructor(props){
@@ -20,9 +18,11 @@ class Dashboard extends Component {
             return  "default-user.png";
     }
 
-    getPoll() {
-        Meteor.call('addPoll',"test");
+    getPoll(){
+
+        Meteor.call("poll.insert", "test");
     }
+
 
     render() {
         if(!this.props.user) {
@@ -38,7 +38,7 @@ class Dashboard extends Component {
                         <div className="action-field">
                             <p>Welcome, {this.getName()}</p>
                         </div>
-                        <input type="button" value="Click Me" onClick={this.getPoll.bind(this)}> </input>
+                        <input type="button" value="Click Me" onClick={this.getPoll.bind(this)}/>
                     </div>
                 </div>
             </div>

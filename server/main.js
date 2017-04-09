@@ -14,8 +14,6 @@ Meteor.startup(() => {
       const email = helper.email;
       const avatar = image.avatar();
       const blurb = lorem.sentences();
-      const mentorTags = [ name.jobType().toLowerCase() ];
-      const menteeTags = [ name.jobType().toLowerCase() ];
 
       Accounts.createUser({
         username: username,
@@ -24,9 +22,15 @@ Meteor.startup(() => {
         profile: { avatar: avatar,
                    firstName: firstName,
                    lastName: '',
-                   blurb: blurb
+                   blurb: blurb,
+            groups:[],
+            polls:[]
+
                  }
+
+
       });
     }); // end loop
   } //end if
+
 }); //end Meteor.startup()
