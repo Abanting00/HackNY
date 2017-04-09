@@ -1,0 +1,544 @@
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    position: relative;
+}
+
+#happy-img {
+    position: absolute;
+}
+
+#title {
+    z-index: 1;
+    position: absolute;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    margin-top: 120px;
+    width: 100%;
+}
+
+#title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+#aboutus {
+    position: relative;
+    margin-top: 680px;
+    padding: 50px;
+}
+
+#main-image {
+    width: 102.4%;
+    margin-left: -15px;
+    margin-top: -20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.mentor-list p {
+    text-align: center;
+}
+
+#profile-hr {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.separation {
+    margin-top: 10px;
+}
+
+#sent {
+    width: 60px;
+}
+
+#profile_blurb {
+    resize: none;
+}
+
+#tags-hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.result-image {
+    border-radius: 50%;
+    float: left;
+    width: 70px;
+}
+
+#username-result {
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: -5px;
+    float: left;
+}
+
+option:hover,
+option:focus {
+    background-color: lightgray;
+    border-radius: 6%;
+    cursor: pointer;
+}
+
+.list-group {
+    position: absolute;
+}
+
+.list-group-item {
+    z-index: 1;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.list-group-item > img {
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+#add-user {
+    width: 20px;
+}
+
+#search-icon {
+    width: 30px;
+    float: right;
+    position: relative;
+    top: -22px;
+    left: -15px;
+    margin: -10px;
+}
+
+.plusIcon {
+    width: 20px;
+    float: right;
+    position: relative;
+    top: -18px;
+    left: -15px;
+    margin: -10px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    float: left;
+}
+
+#logo {
+    width: 98px;
+    height: 70px;
+    position: relative;
+    padding-left: 10px;
+    margin-right: -5px;
+    margin-left: 45px;
+}
+
+#github_icon{
+    width:10%;
+    height:10%;
+}
+
+.thumbnail {
+    width: 20%;
+    display: inline-block;
+    border: none;
+    text-align: center;
+}
+
+.thumbnail > img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+#check-mark {
+    width: 30px;
+    cursor: pointer;
+    float: left;
+}
+
+#check-mark:hover {
+    background-color: lightgray;
+}
+
+#reject {
+    width: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+#reject:hover {
+    background-color: lightgray;
+}
+
+#logo-footer {
+    width: 94px;
+    height: 77px;
+    position: relative;
+}
+
+#avatar {
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+#searchBox {
+    padding-top: 8px;
+    padding-right: 400px;
+    padding-left: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#list-filters > p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.buttons {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.buttons > a {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    width: 102.4%;
+    margin-left: -15px;
+    margin-top: -100px;
+    margin-bottom: -20px;
+    border-radius: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-nav {
+    margin-top: 18px;
+}
+
+.navbar-default .navbar-nav > li {
+    padding-top: 0;
+    padding-left: 8px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #5882FA;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: lightgrey;
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+}
+
+.action-field p {
+    text-align: center;
+    padding-left: -20px;
+}
+
+#action-field2 p {
+    position: static;
+    margin-bottom: -5px;
+}
+
+#action-field2 {
+    border: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: lightgrey;
+    padding: 15px 50px 25px 20px;
+    width: 70%;
+}
+
+.side-by-side {
+    float: left;
+    margin: 25px;
+}
+
+.text-danger {
+    float: left;
+    padding-bottom: 10px;
+}
+
+#profile-pic {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.specialButton {
+    margin: 40px 8px;
+    font-size: 25px;
+}
+
+#profile {
+    border: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: lightgrey;
+    float: left;
+}
+
+.col-xs-6 {
+    width: 65%;
+    height: 100%;
+    position: static;
+}
+
+#addBorder {
+    width: 23%;
+    margin-left: 40px;
+    border: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: lightgrey;
+}
+
+#search-page {
+    width: 23%;
+    margin-left: 40px;
+}
+
+#search-div {
+    padding-bottom: 20px;
+}
+
+h2, a {
+    color: #5882FA;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+    font-size: 18px;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.form-control {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+input[type=submit], .btn-default, .btn-danger, .btn-success {
+    width: 115px;
+    height: 40px;
+    background: #5882FA;
+    border-color: #5882FA;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    position: static;
+}
+
+.btn-primary {
+    width: inherit;
+}
+
+button {
+    width: inherit;
+    height: inherit;
+    background: white;
+    border-color: #5882FA;
+    text-align: center;
+    border-radius: 5px;
+    color: #5882FA;
+}
+
+.radio-input {
+    padding-left:20px;
+}
+
+#radio-buttons {
+    float: left;
+    width: 100%;
+    margin: 5px;
+    position:static;
+}
+
+.col-md-4 {
+    position:static;
+}
+
+.col-md-3 > ul > li {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 19px;
+}
+
+.col-md-3 > ul > li > a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 19px;
+    color: black;
+}
+
+.col-md-3 > ul > li > a:hover {
+    color: #5882FA;
+}
+
+#footer {
+    position: absolute;
+    width:90%;
+    height: 10%;
+}
+
+#connect {
+    font-weight: bold;
+}
+
+.floatRight {
+    float: right;
+}
+
+#put-bottom > h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    margin-left: 230px;
+}
+
+#put-bottom > p {
+    margin-left: 230px;
+}
+
+#action-field2 > h2 {
+    position: static;
+}
+
+/*Password strength*/
+.strengthLevelNone {
+    background-color: rgb(48, 48, 48);
+}
+.strengthLevelLow {
+    background-color: rgb(179, 58, 58);
+}
+.strengthLevelMedium {
+    background-color: rgb(216, 72, 48);
+}
+.strengthLevelHigh {
+    background-color: rgb(240, 120, 48);
+}
+.strengthLevelStrong {
+    background-color: rgb(240,144,48);
+}
+.strengthLevelBar {
+    border-radius: 1px;
+    display: inline-block;
+    height: 10px;
+    margin-right: 1px;
+    width: 22%;
+}
+.strengthLevelText {
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: auto;
+}
+
+.textarea {
+    width: 360px;
+    outline: none;
+    min-height: 20px;
+    padding: 0;
+    box-shadow: none;
+    display: block;
+    border: 2px solid black;
+    overflow: hidden;
+transition: height 0.2s ease;
+}
+
+.textarea--ghost {
+    opacity: 0.3;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+
+#images{
+    position: relative;
+    background-color: #00008B;
+    margin: 10px -15px 0 -15px;
+}
+
+#images h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.floatLeft {
+    float: left;
+    margin-left: 25px;
+}
+
+#photos li{
+    display: inline;
+    margin-right: 20px;
+    align-content: center;
+}
+
+#photos li > h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#photos li > p {
+    color: darkgray;
+    text-align: center;
+}
+
+.imagesSec{
+    border-radius: 50%;
+    width: 150px;
+}
