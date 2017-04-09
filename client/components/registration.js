@@ -1,7 +1,7 @@
 import React        from "react";
 import { Meteor }   from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
-import Welcome      from './welcome';
+import  Welcome      from './welcome';
 import ReactDOM     from 'react-dom';
 import {Link} from 'react-router'
 
@@ -125,8 +125,7 @@ export default class Registration extends React.Component {
       else {
         return (
           <div>
-              <h3>Success</h3>
-              <Link to="home">Go to Dashboard</Link>
+             <Welcome/>
           </div>
         );
       }
