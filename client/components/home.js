@@ -6,7 +6,7 @@ export default class Home extends React.Component {
           return (
             <div className="row">
               <div className="col-xs-6">
-                <img src="meerkat.png"/>
+                <img src=""/>
               </div>
               <div className="col-xs-6">
                 <h2>Welcome</h2>
