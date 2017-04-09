@@ -23,8 +23,8 @@ export default class Home extends React.Component {
                         </div>
                         <div id="button">
                             <input type="button" value="Sign Up" onClick={this.showSignup.bind(this)}/>
-                        </div>
-                        <div id="signup">
+                            <div id="signup" className="">
+                            </div>
                         </div>
                     </div>
                 </div>

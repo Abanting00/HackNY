@@ -24,18 +24,35 @@ input[type=button] {
     background-color: black;
     font-family: 'Oswald', sans-serif;
     width: 250px;
-    height: 100px;
+    height: 80px;
     border: none;
     color: white;
 }
 
-#register {
+input[type=submit] {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 200px;
+    height: 70px;
+    border: none;
+    color: white;
+}
+
+#signup {
     z-index: 1;
     position: absolute;
     float: left;
     text-align: center;
-    padding: 50px;
-    margin-top: 200px;
-    width: 100%;
     font-size: 30px;
+    width: 100%;
+    margin-left: -42px;
+}
+
+.form-group {
+    margin-right: -20px;
+}
+
+.form-horizontal p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
 }

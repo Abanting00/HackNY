@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+body {
+    background-image: url("camping.png");
+}
+
 #wrap {
     position: relative;
 }
@@ -317,7 +321,7 @@ p {
     font-size: 18px;
 }
 
-input[type=submit], .btn-default, .btn-danger, .btn-success {
+.btn-default, .btn-danger, .btn-success {
     width: 115px;
     height: 40px;
     background: #5882FA;

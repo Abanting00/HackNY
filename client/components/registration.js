@@ -91,7 +91,6 @@ export default class Registration extends React.Component {
       if(!this.state.registerSucceeded) {
         return (
             <div className="form-group">
-                <h2>Personal Information</h2>
                 <form className="form-horizontal" onSubmit= {this.handleSubmit.bind(this)} >
                     <p>
                         <label>First Name </label>
